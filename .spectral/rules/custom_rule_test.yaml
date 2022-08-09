@@ -1,8 +1,8 @@
 rules:
 - id: TEST001                               # Unique rule ID
   name: Find some text                      # Verbal description of the finding
-  tags:                                     # By default remote custom rules run on each Spectral scan. use --exclude-tags=custom-rules to disable custom rules.
-  - custom-rules
+  tags:
+  - cusotm-rules                                  # By default remote custom rules run on each Spectral scan. use --exclude-tags=custom-rules to disable custom rules.
   applies_to:
   - ".*$"                                   # Scan any file name
   applies_not_to:
@@ -10,5 +10,5 @@ rules:
   severity: error                           # Valid values are 'info', 'warning' and 'error'.
   pattern_group:
     patterns:
-    - pattern: "some-text"                  # Regex pattern of the finding/secret we wish to alert about.
+    - pattern: "some-text"                    # Regex pattern of the finding/secret we wish to alert about.
       pattern_type: multi                   # For each scanned file: single - stop after one finding; multi - find all.
