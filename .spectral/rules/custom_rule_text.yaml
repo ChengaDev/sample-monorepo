@@ -10,5 +10,5 @@ rules:
   severity: error                           # Valid values are 'info', 'warning' and 'error'.
   pattern_group:
     patterns:
-    - pattern: "/some-text/"                # Regex pattern of the finding/secret we wish to alert about.
+    - pattern: "some-text"                # Regex pattern of the finding/secret we wish to alert about.
       pattern_type: multi                   # For each scanned file: single - stop after one finding; multi - find all.
