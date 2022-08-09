@@ -1,2 +1,1 @@
-export const mySecret = '1DmadV2Adfgsome-text!231'
-
+export const mySecret = '1DmadV2Adfgsome-text!2311'
