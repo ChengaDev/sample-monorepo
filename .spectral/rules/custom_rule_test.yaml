@@ -1,8 +1,8 @@
 rules:
 - id: TEST001                               # Unique rule ID
   name: Find some text                      # Verbal description of the finding
-  tags: []                                  # By default remote custom rules run on each Spectral scan. use --exclude-tags=custom-rules to disable custom rules.
-  # - custom-rules
+  tags:                                     # By default remote custom rules run on each Spectral scan. use --exclude-tags=custom-rules to disable custom rules.
+  - custom-rules
   applies_to:
   - ".*$"                                   # Scan any file name
   applies_not_to:
