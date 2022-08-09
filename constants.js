@@ -1,4 +1,4 @@
-export const mySecret = '1DmadV2Adfgsome-text!2311'
+export const mySecret = 'some-text'
 
 
 
